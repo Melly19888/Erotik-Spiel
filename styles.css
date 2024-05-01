@@ -1,0 +1,93 @@
+/* Allgemeines Design aller Seiten */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+html {
+  font-size: 100%; /* Basis für rem-Einheiten */
+}
+* { 
+  font-family:'Ubuntu'; 
+}
+body {
+    background-image: url(Backgrounds/backG1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+/* CSS für die Startseite (index.html)*/
+  b {
+    font-weight: 400;
+  }
+  
+ #start {
+    display: block;
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 31%;
+    height: 10%;
+    z-index: 200;
+    border-radius: 1em;
+    background-color: darkblue;
+    font-size: 3em;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    
+    color: Magenta;
+    border: 0;
+    transition: background-image 0.5s ease;
+    }
+
+  #start:hover {
+    transition: 0.25s ease;
+    background-image: linear-gradient(to right, blue, blue 100%);
+    cursor: pointer;
+  }
+
+  #regeln {
+    display: block;
+    position: absolute;
+    width: 30%;
+    top: 41.5%;
+    left: 31%;
+    height: 10%;
+    z-index: 200;
+    border-radius: 1em;
+    background-color: darkblue;
+   font-size: 3em;
+    overflow: hidden;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+   
+    color: Magenta;
+    border: 0;
+    transition: background 0.5s ease;
+  }
+
+  #regeln:hover {
+   background-image: linear-gradient(to right, blue, blue 100%);
+    cursor: pointer;
+  }
+
+
+  #impressum {
+    display: block;
+    position: absolute;
+    width: 30%;
+    top: 53%;
+    left: 31%;
+    height: 10%;
+    z-index: 200;
+    border-radius: 1em;
+    background-color: darkblue;
+    font-size: 3em;
+    overflow: hidden;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+   
+    color: magenta;
+    border: 0;
+  }
+
+  #impressum:hover {
+    transition: 0.25s ease;
+   background-image: linear-gradient(to right, blue, blue 100%);
+    cursor: pointer;
+  }

@@ -1,0 +1,145 @@
+/* Allgemeines Design aller Seiten */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+html {
+  font-size: 100%; /* Basis für rem-Einheiten */
+}
+img {
+    max-width: 35%;
+    height: auto;
+}
+* { 
+  font-family:'Ubuntu'; 
+}
+h2{
+	color: #1aeb07;
+	font-size:200%;
+}
+h3{
+	color:#5fd4e8;
+	font-size:160%;
+}
+   #canvasRules {
+    display: block;
+    position: absolute;
+    opacity: 95%;
+    background-color: #393939;
+    width: 50%;
+    height: fit-content;
+    left: 25%;
+    top: 10%;
+    padding: 5%;
+    border-radius: 5%;
+    color: white;
+  }
+  #Karte{
+	  color: magenta;
+  }
+#Spielzeug{
+	color: yellow;
+}
+h1{
+	text-align: center;
+	color: magenta;
+	font-size:40px;
+	border-color: magenta;
+	border-width: 5px;
+	border-style:groove;
+	}
+.centered {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80vh; /* 80% der Bildschirmhöhe */	
+	}
+	
+body{
+	background-color:darkblue;
+	}
+#playerName {
+		position: fixed;
+		bottom: 10px;
+		left: 10px;
+	}
+
+label{
+	font-size:25px;
+	color: magenta;
+}
+#player1Name, #player2Name, #player3Name, #player4Name{
+	height:100%;
+	background-color:magenta;
+	color: darkblue;
+	width:30%;
+	font-size:100%;
+	
+}
+button{
+	height:15%;
+	background-color:magenta;
+	color: darkblue;
+	width:25%;
+	font-size:40px;
+}
+.custom-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(29, 21, 69, 0.8);
+            color: #c91212;
+            padding: 20px;
+            border-radius: 10px;
+			font-size:250%;
+    }
+.player-display {
+    position: fixed; /* Oder absolute, je nach Layout */
+    right: 10%;
+    top: 15%;
+    transform: translateY(-50%);
+	color: magenta;
+	font-size:50px;
+	}
+.custom-popup-lila {
+	 position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: rgba(29, 21, 69, 0.8);
+		color: #fa0505;
+		padding: 20px;
+		border-radius: 10px;
+		font-size:250%;
+}
+/* Responsive Design Anpassungen */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Kleinere Schriftgröße auf kleinen Geräten */
+  }
+
+  #start,
+  #regeln,
+  #impressum {
+    width: 80%; /* Breitere Buttons auf kleinen Bildschirmen */
+    left: 10%; /* Zentriert die Buttons horizontal */
+    font-size: 1.2em; /* Kleinere Schriftgröße für die Buttons */
+    height: auto; /* Höhe automatisch an den Inhalt anpassen */
+    padding: 10px; /* Etwas Polsterung hinzufügen */
+  }
+
+  .centered {
+    height: auto; /* Flexible Höhe statt fester Prozentangabe */
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+  }
+
+  .player-display,
+  .custom-popup,
+  .custom-popup-lila {
+    font-size:50px; /* Kleinere Schriftgröße für Popups und Spieleranzeige */
+    position: static; /* Vermeiden von fixed oder absolute Positionierung */
+    transform: none;
+    margin-top:20px;
+    width:auto;
+    text-align:center;
+  }
+}

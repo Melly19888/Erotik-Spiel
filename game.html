@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sex Spiel</title>
+<link rel="stylesheet" href="style.css">
+    <title>Kartenspiel</title>
+</head>
+<body>
+  <h1>Kartenspiel</h1>
+    <div id="playerName">
+        <label for="player1Name">Spielername 1:</label>
+        <input type="text" id="player1Name" placeholder="Name eingeben">
+		<br>
+		<br>
+		<label for="player2Name">Spielername 2:</label>
+        <input type="text" id="player2Name" placeholder="Name eingeben">
+		<br>
+		<br>
+		 <label for="player3Name">Spielername 3:</label>
+        <input type="text" id="player3Name" placeholder="Name eingeben">
+		<br>
+		<br>
+		 <label for="player4Name">Spielername 4:</label>
+        <input type="text" id="player4Name" placeholder="Name eingeben">
+		<br>
+		<br>
+	 </div>
+        <button id="startButton">Start</button>
+   
+    <button id="drawCardButton">Karte ziehen</button>
+    <div id="card" class="centered"></div>
+    <div id="task"></div>
+	
+	<div id="currentPlayerDisplay" class="player-display">
+    Nächster Spieler: <span id="currentPlayerName"></span>
+</div>
+
+
+ <script src = "script.js"></script>
+</body>
+</html>
